@@ -1,0 +1,41 @@
+#ifndef ENGINE_ENGINE_CONFIG_H
+#define ENGINE_ENGINE_CONFIG_H
+
+//
+#define DUAR_UNUSED(VAL) (void)(VAL)
+
+//
+#define DUAR_ON 1
+#define DUAR_OFF 0
+
+#define DUAR_ENABLE_GLM DUAR_ON
+
+#define DUAR_ENABLE_GLTF DUAR_ON
+
+#define DUAR_ENABLE_GUI DUAR_ON
+
+#define DUAR_ENABLE_GLES2 DUAR_ON
+
+#define DUAR_ENABLE_WEBGL DUAR_ON
+
+#ifdef DUAR_DEBUG
+    #define DUAR_DEBUG_SIMPLE DUAR_ON
+
+    #define DUAR_DEBUG_ALL DUAR_OFF
+
+    #define DUAR_DEBUG_EXTRA DUAR_OFF
+
+    #if DUAR_DEBUG_EXTRA
+        #define DUAR_DEBUG_LEVEL BGFX_DEBUG_STATS | BGFX_DEBUG_PROFILER
+    #elif DUAR_DEBUG_ALL
+        #define DUAR_DEBUG_LEVEL BGFX_DEBUG_STATS
+    #elif DUAR_DEBUG_SIMPLE
+        #define DUAR_DEBUG_LEVEL BGFX_DEBUG_TEXT
+    #else
+        #define DUAR_DEBUG_LEVEL BGFX_DEBUG_NONE
+    #endif
+#else
+    #define DUAR_DEBUG_LEVEL BGFX_DEBUG_NONE
+#endif
+
+#endif

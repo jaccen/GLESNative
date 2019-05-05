@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/bgfx.cmake" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/bgfx.cmake/bgfx" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/bgfx.cmake/bimg" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/bgfx.cmake/bx" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/third-party/bgfx" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/third-party/bgfx/bgfx" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/third-party/bgfx/bimg" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/third-party/bgfx/bx" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/third-party/bimg" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/third-party/bx" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/third-party/lib/bgfx" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/third-party/lib/bimg" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/third-party/lib/bx" vcs="Git" />
+  </component>
+</project>
