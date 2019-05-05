@@ -39,6 +39,22 @@ add_library(gles3jni SHARED
             RendererES2.cpp
             RendererES3.cpp)
 
+
+# glm
+set (GLM_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/dependencies/glm/ )
+SET(GLM_TEST_ENABLE OFF CACHE BOOL "disable glm test")
+#add_subdirectory(lib/glm EXCLUDE_FROM_ALL)
+#target_link_libraries(native-lib PRIVATE glm)
+
+#stb
+set (STB_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/dependencies/stb/ )
+
+set(ENGINE_INCLUDES
+        ${GLM_INCLUDE_DIRS}
+        ${STB_INCLUDE_DIRS}
+        )
+include_directories(${ENGINE_INCLUDES})
+
 # Include libraries needed for gles3jni lib
 target_link_libraries(gles3jni
             ${OPENGL_LIB}
